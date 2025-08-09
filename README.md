@@ -1,20 +1,20 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# [identity identifier] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [tech]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
+- Team Lead: [Nena] - [EMEA]
 - Member 2: [Name] - [College]
 - Member 3: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
+[the project just guesses the identity of the person. it saya whether the person is in a LGBTQ+ communuity.]
 
 ### The Problem (that doesn't exist)
 [What ridiculous problem are you solving?]
@@ -25,7 +25,7 @@
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
+- [Languages used is html css and javascript]
 - [Frameworks used]
 - [Libraries used]
 - [Tools used]
