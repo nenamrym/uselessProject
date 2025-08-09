@@ -1,14 +1,158 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>identity prediction</title>
-    <link rel="stylesheet" href="demo.css">
-</head>
-<body>
-<h1>identity prediction</h1>
-<p class="first">say ur name, let me predict ur identity!!!</p>
-<input type="textarea" id="nameInput" placeholder=" type">
-<button onclick="predict()">predict</button>
-<p  class="second" id="result"></p>
-<script src="demo.js"></script>
-</body>
+        <meta charset="UTF-8">
+        <title>Identity Prediction</title>
+        <style>
+            /* Overall background with a red and blue gradient */
+            body {
+                background: linear-gradient(135deg, #ff4d4d, #0066cc);
+                color: #ffffff;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* Styled header with shadow effect */
+            h1 {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #ffffff;
+                text-align: center;
+                margin-top: 50px;
+                padding: 20px 40px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            }
+
+            /* Instruction text styling */
+            .first {
+                font-size: 1.2em;
+                margin-top: 30px;
+                text-align: center;
+                text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            }
+
+            /* Input field styling */
+            #nameInput {
+                display: block;
+                margin: 20px auto;
+                width: 300px;
+                padding: 12px;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #ffffff;
+                border: 2px solid #ffffff;
+                border-radius: 8px;
+                font-size: 1em;
+                outline: none;
+                transition: border-color 0.3s ease;
+            }
+            #nameInput:focus {
+                border-color: #ff4d4d;
+            }
+
+            /* Button styling with gradient and hover effect */
+            button {
+                display: block;
+                margin: 10px auto;
+                padding: 10px 30px;
+                background: linear-gradient(45deg, #ff4d4d, #0066cc);
+                border: none;
+                color: #ffffff;
+                font-size: 1em;
+                cursor: pointer;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                transition: transform 0.2s ease;
+            }
+            button:hover {
+                transform: scale(1.05);
+            }
+
+            /* Result text styling */
+            .second {
+                margin-top: 20px;
+                font-size: 1.1em;
+                text-align: center;
+                text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Identity Prediction</h1>
+        <p class="first">Say your name, let me predict your identity!!!</p>
+        <input type="text" id="nameInput" placeholder="Type your name">
+        <button onclick="predict()">Predict</button>
+        <p class="second" id="result"></p>
+        <script>
+            function predict() {
+                const name = document.getElementById('nameInput').value.trim();
+                let prediction = '';
+
+                if (!name) {
+prediction = 'Please enter your name!';
+} else if (name[0].toLowerCase() === 'a') {
+    prediction = 'You might be Lesbian!';
+} else if (name[0].toLowerCase() === 'b') {
+    prediction = 'You might be Gay!';
+} else if (name[0].toLowerCase() === 'c') {
+    prediction = 'You might be Bisexual!';
+} else if (name[0].toLowerCase() === 'd') {
+    prediction = 'You might be Transgender!';
+} else if (name[0].toLowerCase() === 'e') {
+    prediction = 'You might be Queer!';
+} else if (name[0].toLowerCase() === 'f') {
+    prediction = 'You might be Intersex!';
+} else if (name[0].toLowerCase() === 'g') {
+    prediction = 'You might be Asexual!';
+} else if (name[0].toLowerCase() === 'h') {
+    prediction = 'You might be Pansexual!';
+} else if (name[0].toLowerCase() === 'i') {
+    prediction = 'You might be Non-binary!';
+} else if (name[0].toLowerCase() === 'j') {
+    prediction = 'You might be Demisexual!';
+} else if (name[0].toLowerCase() === 'k') {
+    prediction = 'You might be Genderfluid!';
+} else if (name[0].toLowerCase() === 'l') {
+    prediction = 'You might be Agender!';
+} else if (name[0].toLowerCase() === 'm') {
+    prediction = 'You might be Androgynous!';
+} else if (name[0].toLowerCase() === 'n') {
+    prediction = 'You might be Polyamorous!';
+} else if (name[0].toLowerCase() === 'o') {
+    prediction = 'You might be Two-Spirit!';
+} else if (name[0].toLowerCase() === 'p') {
+    prediction = 'You might be Questioning!';
+} else if (name[0].toLowerCase() === 'q') {
+    prediction = 'You might be Genderqueer!';
+} else if (name[0].toLowerCase() === 'r') {
+    prediction = 'You might be Aromantic!';
+} else if (name[0].toLowerCase() === 's') {
+    prediction = 'You might be Skoliosexual!';
+} else if (name[0].toLowerCase() === 't') {
+    prediction = 'You might be Transmasculine!';
+} else if (name[0].toLowerCase() === 'u') {
+    prediction = 'You might be Transfeminine!';
+} else if (name[0].toLowerCase() === 'v') {
+    prediction = 'You might be Bigender!';
+} else if (name[0].toLowerCase() === 'w') {
+    prediction = 'You might be Omnisexual!';
+} else if (name[0].toLowerCase() === 'x') {
+    prediction = 'You might be Neutrois!';
+} else if (name[0].toLowerCase() === 'y') {
+    prediction = 'You might be Pangender!';
+} else if (name[0].toLowerCase() === 'z') {
+    prediction = 'You might be Multisexual!';
+} else {
+    prediction = 'You might have a unique identity!';
+}
+
+
+                document.getElementById('result').textContent = prediction;
+            }
+        </script>
+    </body>
 </html>
